@@ -1,0 +1,468 @@
+header{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headeralan{
+    width: 400px;
+    height: 180px;
+    background-color: hsl(240, 50%, 95%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#baslik{
+    padding-top: 5px;
+}
+
+#info{
+    padding-top: 20px;
+}
+
+body{
+    background-color: hsl(207, 100%, 68%);
+    user-select: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#karakteralan{
+    height: 400px;
+    width: 400px;
+    image-rendering: pixelated;
+    background-image: url("Resimler/gündüz.png");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+@keyframes finn-breathe{
+    from {background-position: 0px 0;}
+    to {background-position: -2520px 0;}
+}
+
+@keyframes finn-attack{
+    from {background-position: -6440px 0;}
+    to {background-position: -7840px 0;}
+}
+
+@keyframes finn-sleep{
+    from {background-position: -5040px 0;}
+    to {background-position: -6160px 0;}
+}
+
+@keyframes finn-damaged{
+    from {background-position: -4480px 0;}
+    to {background-position: -5040px 0;}
+}
+
+@keyframes finn-walk{
+    from {background-position: -2520px 0;}
+    to {background-position: -4200px 0;}
+}
+
+@keyframes finn-tick{
+    0% , 100% {background-position: 0px 0;}
+    50% {background-position: -4760px 0;}
+}
+
+@keyframes finn-dance{
+    0% {transform: rotate(-2deg)}
+    50% {transform: rotate(2deg)}
+    100% {transform: rotate(-2deg)}
+}
+
+.finn-idle.finn-dans {
+    animation: 
+        finn-breathe 2.5s steps(9) infinite,
+        finn-dance 2s infinite ease-in-out;  
+}
+
+.finn-idle{
+    animation: finn-breathe 2.5s steps(9) infinite;
+}
+
+.finn-saldir{
+    animation: finn-attack 0.7s steps(5) infinite;
+}
+
+.finn-uyu{
+    animation: finn-sleep 1.7s steps(4) forwards;
+}
+
+.finn-hasar{
+    animation: finn-damaged 0.5s steps(2) infinite;
+}
+
+.finn-yuru{
+    animation: finn-walk 1s steps(6) infinite;
+}
+
+.finn-tik{
+    animation: finn-tick 0.5s steps(1) 3 forwards;
+}
+
+#finn{
+    image-rendering: pixelated;
+    width: 280px;
+    height: 280px;
+    background-image: url("Resimler/FinnSprite.png");
+    background-size: 7840px 280px;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+}
+
+#talk{
+    position: absolute;
+    image-rendering: pixelated;
+    width: 200px;
+    height: 200px;
+    background-image: url("Resimler/Balonlar/acik_surat.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 140px;
+    margin-top: 110px;
+}
+
+#ekalan{
+    width: 400px;
+    height: 150px;
+    background-color: hsl(240, 50%, 95%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#exptext{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: hsl(0, 0%, 20%);
+    padding-top: 20px;
+    cursor: default;
+}
+
+#levelalan{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 5px;
+}
+
+#level{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    cursor: default;
+    color: hsl(0, 0%, 20%);
+}
+
+#expbar{
+    width: 300px;
+    height: 10px;
+    border: 2px solid hsl(0, 0%, 62%);
+    border-radius: 8px;
+    margin-left: 20px;
+    background-color: hsl(0, 0%, 65%);
+}
+
+#exp{
+    width: 150px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: hsl(120, 100%, 30%);
+}
+
+#muzikalan{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.butondiv{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(240, 50%, 95%);
+    border: 2px solid hsla(0, 0%, 35%, 0.678);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.butondiv:hover{
+    background-color: hsl(240, 50%, 90%);
+    transform: scale(1.05);
+}
+
+.butondiv:active{
+    transform: scale(0.98);
+
+}
+
+.muzikbutton{
+    width: 30px;
+    height: 30px;
+    color: rgb(71, 71, 71);
+}
+
+#muzikad{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 30%);
+    cursor: default;
+}
+
+#takvimalan{
+    width: 35%;
+}
+
+#takvimdis{
+    margin-top: 40px;
+    width: 470px;
+    height: 480px;
+    background-color: hsl(240, 50%, 93%);
+    margin-left: 50px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#takvim{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(7,60px);
+    gap: 3px;
+}
+
+#gunluk-gorev-alan{
+    width: 300px;
+    height: 150px;
+    background-color: hsl(240, 50%, 95%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px grey;
+    display: flex;
+    flex-direction: column;
+}
+
+#ay-isim{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: hsl(0, 0%, 20%);
+}
+
+#gunluk-baslik{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    cursor: default;
+    color: hsl(0, 0%, 20%);
+}
+
+#gunluk-gorev{
+    margin-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gunluk-gorev-check{
+    display: flex;
+}
+
+#gorevcheck{
+    margin-left: 30px;
+}
+
+.ay-isim-alan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ay-buton{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.day:not(.bos) {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.day:not(.bos):hover {
+    background-color: hsl(240, 60%, 90%);
+    transform: scale(1.1);
+    border-color: hsl(240, 50%, 60%);
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.day.bitmis_gun:not(.bos):hover{
+    background-color: hsl(120, 99%, 45%);
+    border-color: hsl(120, 89%, 26%);
+}
+
+.day{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: hsl(240, 50%, 97%);
+}
+
+.today.bitmis_gun{
+    box-shadow: inset 0 0 0 3px hsl(120, 99%, 32%);
+    font-weight: bold;
+}
+
+.today{
+    box-shadow: inset 0 0 0 3px hsl(0, 0%, 66%);
+    font-weight: bold;
+}
+
+.bos{
+    background-color: hsl(180, 6%, 88%);
+    opacity: 40%;
+}
+
+.gunisim{
+    margin-top: 0px;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: hsl(240, 23%, 85%)
+}
+
+.bitmis_gun{
+    background-color: hsl(120, 99%, 40%);
+}
+
+#gorevalan{
+    margin-top: 40px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+#gorevlistekisim{
+    width: 300px;
+    height: 300px;
+    background-color: hsl(240, 50%, 95%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#gorevyazi{
+    padding-top: 0px;
+    padding-left: 20px;
+    color: hsl(0, 0%, 20%);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: default;
+}
+
+#gorevinput{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border: 2px solid hsl(240, 50%, 97%);
+    transition: border-color 0.2s ease;
+    border-radius: 8px;
+}
+
+#gorevlistesi{
+    list-style-type: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+#gorevinput:focus{
+    border-color: hsl(240, 50%, 87%);
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(69, 69, 69);
+}
+
+#gorevekleme{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#eklebtn{
+    width: 50px;
+    height: 30px;
+    background-color: hsl(0, 0%, 55%);
+    border: 2px solid hsl(0, 0%, 54%);
+    color: white;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    margin-bottom: 4px;
+}
+
+#eklebtn:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 4px rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+#eklebtn:active{
+    transform: scale(0.98);
+    box-shadow: 0 0 2px rgb(55, 55, 55);
+}
+
+.tamamlandi{
+    text-decoration: line-through;
+    color: hsl(0, 0%, 27%);
+}
+
+.delete-btn{
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elemanlar{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 260px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.span{
+    white-space: nowrap;
+    overflow-x: auto;
+    display:block;
+    flex: 1;
+    min-width: 0;
+    scrollbar-width: none;
+}

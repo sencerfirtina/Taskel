@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="headeralan">
+            <h1 id="baslik" class="baslik">Taskel🗒️</h1>
+            <p id="info" class="baslik">No tasks completed yet</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="karakteralan">
+            <div id="talk"></div>
+            <div id="finn" class="finn-idle"></div>
+            <div id="ekalan">
+                <p id="exptext">EXP</p>
+                <div id="levelalan">
+                    <div id="expbar"><div id="exp"></div></div>
+                    <p id="level">LVL 1</p>
+                </div>
+                <div id="muzikalan">
+                    <audio id = "muzik-calar"></audio>
+                    <div class="butondiv" id="prevdiv">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="prevbutton" class="muzikbutton"> <path d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z" fill="currentColor"/> </svg>
+                    </div>
+                    <div class="butondiv" id="playdiv">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="playbutton" class="muzikbutton"> <path d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z" fill="currentColor"/> </svg>
+                    </div>
+                    <div class="butondiv" id="pausediv" style="display: none;">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="pausebutton" class="muzikbutton"> <path d="M10 4H5v16h5V4zm9 0h-5v16h5V4z" fill="currentColor"/> </svg>
+                    </div>
+                    <div class="butondiv" id="nextdiv">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="nextbutton" class="muzikbutton"> <path d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z" fill="currentColor"/> </svg>
+                    </div>
+                    <p id="muzikad">Nothing</p>
+                </div>
+            </div>    
+        </section>
+
+        <section id="takvimalan">
+            <div id="takvimdis">
+                <div class="ay-isim-alan">
+                    <div class="ay-buton" id="onceki-ay-buton">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 5v2h-2V5h2zm-4 4V7h2v2h-2zm-2 2V9h2v2h-2zm0 2H8v-2h2v2zm2 2v-2h-2v2h2zm0 0h2v2h-2v-2zm4 4v-2h-2v2h2z" fill="currentColor"/> </svg>
+                    </div>
+                    <h2 id="ay-isim"></h2>
+                    <div class="ay-buton" id="sonraki-ay-buton">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M8 5v2h2V5H8zm4 4V7h-2v2h2zm2 2V9h-2v2h2zm0 2h2v-2h-2v2zm-2 2v-2h2v2h-2zm0 0h-2v2h2v-2zm-4 4v-2h2v2H8z" fill="currentColor"/> </svg>
+                    </div>
+                </div>
+                <div id="takvim"></div>
+            </div><br>
+            
+        </section>
+
+        <section id="gorevalan">
+            <div id="gorevekleme">
+                <input type="text" id="gorevinput" placeholder="Enter new task...">
+                <button id="eklebtn">Add</button>
+            </div>
+            <div id="gorevlistekisim">
+                <h2 id="gorevyazi">My Tasks:</h2>
+                <ul id="gorevlistesi">
+                </ul>
+            </div>
+            </div>
+            <div id="gunluk-gorev-alan">
+                <h3 id="gunluk-baslik">Gunun Gorevi:</h3>
+                <div id="gunluk-gorev-check">
+                    <input type="checkbox" id="gorevcheck">
+                    <p id="gunluk-gorev"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
