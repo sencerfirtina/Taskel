@@ -5,8 +5,6 @@
 Taskel, görev takibini sıkıcı bir zorunluluktan çıkarıp eğlenceli bir RPG oyununa dönüştüren web tabanlı bir uygulamadır. Görevleri tamamladıkça EXP kazanın, seviye atlayın ve Finn'in tepkilerini izleyin!
 
 ![Taskel Screenshot](Resimler/Taskel.gif)
-*(İpucu: Projenden güzel bir ekran görüntüsü alıp buraya linkini koymalısın)*
-*![Taskel Demo](assets/taskel-demo.gif) şeklinde eklicen* 
 
 ## ✨ Özellikler
 
@@ -50,4 +48,3 @@ Bu proje herhangi bir kütüphane veya framework gerektirmez. Sadece indirin ve 
 4.  Branch'inizi Push'layın ve bir Pull Request oluşturun.
 
 ---
-*Bu proje Sencer Fırtına tarafından geliştirilmiştir.*
