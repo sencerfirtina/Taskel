@@ -289,12 +289,11 @@ const takvim_ciz = () => {
     const today = new Date().getDate();
     const this_month = new Date().getMonth();
     const this_year = new Date().getFullYear();
-    console.log(today);
     if(baslangic_gunu == 0){
         baslangic_gunu = 6;
     }
     else{
-            baslangic_gunu--;
+        baslangic_gunu--;
     }
     if(bitis_gunu == 0){
         bitis_gunu = 6;
