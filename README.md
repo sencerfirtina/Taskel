@@ -2,7 +2,7 @@
 
 > "Sıradan bir yapılacaklar listesi değil, Finn ile birlikte çıktığın bir macera!"
 
-Taskel, görev takibini sıkıcı bir zorunluluktan çıkarıp eğlenceli bir RPG oyununa dönüştüren web tabanlı bir uygulamadır. Görevleri tamamladıkça EXP kazanın, seviye atlayın ve Finn'in tepkilerini izleyin!
+Taskel, görev takibini sıkıcı bir zorunluluktan çıkarıp eğlenceli bir oyuna dönüştüren web tabanlı bir uygulamadır. Görevleri tamamladıkça EXP kazanın, seviye atlayın ve Finn'in tepkilerini izleyin!
 
 ![Taskel Screenshot](Resimler/Taskel.gif)
 
@@ -32,7 +32,7 @@ Bu proje herhangi bir kütüphane veya framework gerektirmez. Sadece indirin ve 
     git clone [https://github.com/sencerfirtina/Taskel.git](https://github.com/sencerfirtina/Taskel.git)
     ```
 2.  Klasörün içine girin ve `index.html` dosyasını tarayıcınızda açın.
-3.  İyi eğlenceler!
+3.  Bu kadar, iyi eğlenceler!
 
 ## 🎨 Görseller ve Varlıklar
 
