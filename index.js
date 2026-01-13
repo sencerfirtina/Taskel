@@ -242,7 +242,12 @@ const hareket_dinle = () => {
 
 const info_guncelle = () => {
     const yeni_sayi = tasks.filter(task=>task.tamamlandi).length;
-    info.textContent = `${yeni_sayi} adet görev tamamlandı`;
+    if(yeni_sayi == 0){
+        info.textContent = "Henuz hicbir gorev tamamlanmadi";
+    }
+    else{
+        info.textContent = `${yeni_sayi} adet görev tamamlandı`;
+    }
 }
 
 const tarih_string = () => {
